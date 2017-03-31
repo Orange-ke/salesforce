@@ -415,19 +415,23 @@
              $(".button_con").click(function(event) {
                 event.preventDefault();
                 var a = 0, b = 0 , t = 0;
-                $("#progress_con" + y).show();
-                $(this).hide();
                 t += 1;
                 if ($("#_" + m).prop('checked')) {
                  a += 1;
+                 console.log(a);
+                 console.log($("#progress" + m + " div"));
                  $("#poll_qut" + m).text("(" + a + ")");
                  $("#progress" + m + " div").css('width', a/t*100 + "%").text(a/t*100 + "%");
-               } else if ($("#_" + z).prop('checked')) {
+                } else if ($("#_" + z).prop('checked')) {
                  b += 1;
+                 console.log(b);
+                 console.log($("#progress" + z + " div"));
                  $("#poll_qut" + z).text("(" + b + ")");
                  $("#progress" + z + " div").css('width', b/t*100 + "%").text(b/t*100 + "%");  	
-               }
-               $("#" + id_choice_con_).hide();
+                }
+                $("#progress_con" + y).show();
+                $(this).hide();
+                $("#" + id_choice_con_).hide();
              })   
              $("#massage_up").click(function() { 
                  n_ += 1;
