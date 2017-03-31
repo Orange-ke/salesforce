@@ -1,6 +1,3 @@
-/*copy right
- */
-
 body {
 	overflow: auto;
 	background: #F4F6F9;
@@ -16,37 +13,6 @@ a {
 
 a:hover {
 	text-shadow: .5px .5px .5px #ddd;
-}
-
-p.dropdown-menu {
-	padding: 5px;
-	text-align: center;
-	background: #212121;
-	color: #fff;
-}
-
-span.glyphicon {
-	cursor: pointer;
-}
-
-.navbar-inverse .dropdown-menu {
-	background: #212121;
-	color: #fff;
-}
-
-.navbar-inverse .dropdown-menu a {
-	padding: 0 15px;
-	height: 25px;
-	color: #fff;
-}
-
-.navbar-inverse .dropdown-menu a span {
-	border: none;
-}
-
-.dropdown div.dropdown-menu a:hover {
-    background: #f5f5f5;
-    color: #212121;
 }
 
 .chatter_ {
@@ -182,7 +148,6 @@ a.sale div {
 
 .slide_content_ {
 	list-style: none;
-	height: 100%;
 	padding: 0px;
 	overflow: hidden;
 }
@@ -195,39 +160,8 @@ a.sale div {
 	width: 150px;
 }
 
-ul.dropdown-menu {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	min-width: 148px;
-	max-width: 150px
-}
-
-.slide_content_ .dropdown-menu li:first-child {
-	border: none;
-    padding: 0;
-    text-align: center;
-}
-
-.slide_content_ .dropdown-menu li a:hover {
-	background: #F5F5F5;
-}
-
-.slide_content_ .dropdown-menu li a {
-	padding: 0;
-}
-
-.dropdown-menu li a span.glyphicon {
-	font-size: 13px;
-	line-height: 13px
-}
-
 a.link,a.chatter:hover {
 	text-decoration: none;
-}
-
-.slide_content_ a.folder , .slide_content_ a.calendar {
-	padding-left: 66px;
 }
 
 .active {
@@ -371,18 +305,10 @@ div.tab-pane form {
 
 .chatter_folder {
 	width: 100%;
-	height: auto;
+	height: 270px;
 	border: 1px solid #ddd;
 	border-radius: 4px 4px;
 	padding: 10px 15px;
-}
-
-.floatfix:after {
-     content:".";        
-     display:block;        
-     height:0;        
-     clear:both;        
-     visibility:hidden;        
 }
 
 .chatter_detail  {
@@ -437,7 +363,6 @@ div.add_:hover {
 
 .operation_ {
 	display: inline-block;
-	height: auto;
 	padding: 15px 15px 15px 0;
 	margin: 5px 5px 5px 0;
 }
@@ -563,7 +488,6 @@ div.add_:hover {
 	border-top: 1px solid #ddd;
 	margin-top: 20px;
 	padding-bottom: 20px;
-	position: relative;
 }
 
 .new_activity {
@@ -590,33 +514,20 @@ div.add_:hover {
 }
 
 .new_activity_tool {
-	display: inline-block;
+	display: inline;
 	float: right;
 	margin: 15px 15px 0 0; 
 }
 
-.new_activity_tool input {
-	display: inline-block;
-	width: 200px;
-    position: absolute;
-    top: 0;
-    right: 80px;
-    margin-top: 12px;
-}
-
 .new_activity_tool span {
 	padding: 5px;
-	margin-left: 5px;
+	margin-left: 10px;
 	border: 1px solid #fff;
 	cursor: pointer;
 }
 
 .new_activity_tool span:hover {
 	border: 1px solid #ddd;
-}
-
-#new_activity_search_ {
-	transition-duration: 1s;
 }
 
 .edit_ {
@@ -670,10 +581,6 @@ div.add_:hover {
 	padding: 20px 0;
 }
 
-.publish_content .choice span {
-	padding-right: 5px;
-}
-
 .portrait {
 	border: 1px solid #ddd;
 	border-radius: 22.5px;
@@ -694,16 +601,7 @@ div.add_:hover {
 }
 
 .choice_ {
-	margin: 0 0 15px 15px;
-}
-
-.choice_ span {
-	padding: 0;
-}
-
-.choice_ a {
-	margin-right: 10px;
-	cursor: pointer;
+	margin-bottom: 15px;
 }
 
 .portrait_sm {
@@ -712,7 +610,6 @@ div.add_:hover {
 	border-radius: 15px;
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-bottom: 15px;
 }
 .massage_ {
 	padding-bottom: 15px;
@@ -755,120 +652,57 @@ input[name='massage'] {
 	box-shadow: inset 0 1px 3px rgba(0,0,0,0.1),0 0 8px rgba(82,168,236,0.6);
 }
 
-.quote_content {
-    margin: 5px 0 0 0;
+#quote_content {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+    margin-top: 20px;
     width: 100%;
     height: auto;
     padding: 6px 12px 20px 12px;
 }
 
-.quote_content form {
+#quote_content form {
 	border-bottom: none;
 }
 
-.quote_content .quote_para {
+#quote_para {
 	padding: 0;
 	font-size: 1.1em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-._choices_ {
-	margin-bottom: 10px;
+#poll_choice {
+    display: block;
+    font-size: 1em;
 }
 
-._choices_ input {
+#choices_ {
+	margin-top: 10px;
+}
+
+#choices_ input {
 	margin-top: 0;
 	margin-right: 15px;
 	padding: 0;
 }
 
-.send {
+#send {
 	margin-top: 10px;
 }
 
-.send button {
+#send button {
     margin-right: 15px;
 }
 
-.send span {
+#send span {
 	line-height: 28px;
-	padding: 10px 12px;
+	padding: 8px 12px;
 	cursor: pointer;
 	border: 1px solid #fff;
 }
 
-.send span:hover {
+#send span:hover {
 	background: #F4F6F9; 
 	border: 1px solid #ddd;
-	border-radius: 4px 4px;
-}
-
-.poll_con {
-	margin-bottom: 10px;
-}
-
-.massage_up_btn , .massage_up_btn_ {
-	float: right;
-	margin-top: 10px;
-}
-
-a.upload,a.mention {
-	margin-top: 5px;
-	display: inline-block;
-	position: relative;
-	width: 26px;
-	height: 26px;
-	overflow: hidden;
-	border: 1px solid #fff;
-}
-
-a.upload:before,a.mention:before {
-	position: absolute;
-    top: 5px;
-    left: 5px;
-}
-
-a.upload:hover,a.mention:hover {
-	cursor: pointer;
-	border: 1px solid #ddd;
-}
-
-.file_input {
-	position: absolute;
-    font-size: 100px;
-    top: 0;
-    right: 0;
-	opacity: 0;
-	cursor: pointer;
-}
-
-.upload_ {
-	display: inline-block;
-	height: 25px;
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-	cursor: pointer;
-}
-
-.upload_ span {
-	display: inline-block;
-	position: absolute;
-	margin: 0;
-	padding: 0;
-}
-
-.input_file_ {
-	position: absolute;
-    font-size: 100px;
-    top: 0;
-    right: 0;
-	opacity: 0;
-	cursor: pointer;
-}
-
-
-#upload_file_store {
-	display: inline-block;
-	width: auto;
+	border-radius: 3px 3px;
 }
