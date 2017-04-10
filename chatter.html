@@ -164,12 +164,13 @@
 </script>
 <script>
     
+    $("a[href = 'https://www.froala.com/wysiwyg-editor?k=u']").css("display","none");
     window.onload=function(){
     var temp = document.getElementsByTagName("a");
     var i = 0;
     for(i=0;i<temp.length;i++){
         //console.log(temp[i].href);
-        if(temp[i].href == "https://www.froala.com/wysiwyg-editor?k=u")
+        if(temp[i].href == "https://www.froala.com/wysiwyg-editor")
          {temp[i].parentNode.removeChild(temp[i].parentNode.childNodes[0]);
          }
     }
