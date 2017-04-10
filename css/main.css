@@ -36,6 +36,11 @@ div.container-fluid {
 
 td {
 	border: 1px solid #dddddd;
+	height: 30px;
+}
+
+hr {
+	margin: 0;
 }
 
 /*------------------------------------------------------------nav-inverse style*/
@@ -821,6 +826,10 @@ input[name='massage'] {
 	transition-duration: .3s;
 }
 
+.fr-box.fr-basic .fr-element {
+	padding: 25px;
+}
+
 .fr-element p {
 	margin: 10px;
 	padding: 0;
@@ -992,12 +1001,4 @@ a.upload:hover,a.mention:hover {
 #mask_show button {
 	float: right;
 	margin: 15px 7.5px 15px 7.5px;
-}
-
-hr {
-	margin: 0;
-}
-
-a[href='https://www.froala.com/wysiwyg-editor?k=u'] {
-	display: none;
 }
