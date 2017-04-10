@@ -38,6 +38,7 @@ $(function() {
 	    })
 
 	    $("a.chatter").click(function() {
+	    	document.title = "Chatter | Salesforce";
 	        $(".chatter_").load('chatter.html');
 	    })
 
