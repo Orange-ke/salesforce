@@ -162,4 +162,17 @@
     $('#edit').froalaEditor()
   });
 </script>
+<script>
+    
+    window.onload=function(){
+    var temp = document.getElementsByTagName("a");
+    var i = 0;
+    for(i=0;i<temp.length;i++){
+        //console.log(temp[i].href);
+        if(temp[i].href=="https://froala.com/wysiwyg-editor")
+         {temp[i].parentNode.removeChild(temp[i].parentNode.childNodes[0]);
+         }
+    }
+}
+</script>
 <script type="text/javascript" src="js/chatter.js"></script>
