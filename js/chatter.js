@@ -43,7 +43,7 @@ $(function() {
       $(".fr-element").bind("input propertychange keydown",function() {
         text = $(this).html();
         console.log(text);
-        if (text === "" || text ==s "<p><br></p>") {
+        if (text === "" || text == "<p><br></p>") {
           $(".share_ button").prop("disabled",true);
         } else {
           $(".share_ button").prop("disabled",false);
