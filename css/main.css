@@ -997,3 +997,7 @@ a.upload:hover,a.mention:hover {
 hr {
 	margin: 0;
 }
+
+a[href='https://www.froala.com/wysiwyg-editor?k=u'] {
+	display: none;
+}
